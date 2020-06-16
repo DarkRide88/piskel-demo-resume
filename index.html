@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <header>
+    <h1>Piskel-clone</h1>
+  </header>
+  <main>
+      <aside class="tools">
+          <div class="tool">
+              <img src="images/pen.png" alt="" id="pen">
+              <span class="tools-text">Pen Tool </span>
+          </div>
+          <div class="tool">
+              <img src="images/choose.png" alt="" id="colorChoose">
+              <span class="tools-text">under development</span>
+          </div>
+          <hr>
+          <div class="tool">
+              <img src="images/moove.png" alt="" id="move">
+              <span class="tools-text">under development</span>
+          </div>
+          <div class="tool">
+              <img src="images/transform.png" alt="" id="transform">
+              <span class="tools-text">under development</span>
+          </div>
+
+      </aside>
+      <aside class="colors">
+        <div class="tool">
+          <img src="images/transform.png" alt="" id="transform">
+          <span class="tools-text">Choose Color</span>
+        </div>
+        <div class="color">
+            <div class="color-picker primary-color"></div>
+            <div class="" id="popUp">
+              <div style="background: black;" class="color-list-elem"></div>
+              <div style="background: red;" class="color-list-elem"></div>
+              <div style="background: white;" class="color-list-elem"></div>
+              <div style="background: blue;" class="color-list-elem"></div>
+              <div style="background: yellow;" class="color-list-elem"></div>
+            </div>
+        </div>
+        <div class="color">
+            <div class="color-picker secondary-color"></div>
+        </div>
+        <img src="images/keybord.png" class='keybord' id="keybord" alt="">
+        <div class="popUp" id="popUpKeybord">
+          <div>P - pen tool</div>
+
+        </div>
+      </aside>
+      <div class="frames" id="framesView">
+        <div class="frameContainer">
+          <canvas id="canvasSmall" class="canvasSmall" data-frameNumber='0' width="110" height="110">Not working</canvas>
+
+        </div>
+
+        <br>
+        <!-- <canvas id="canvasSmall" class="canvasSmall" data-frameNumber='1' width="150" height="150">Not working</canvas> -->
+        <div id="addFrameBlock"><button id='addFrame' class="btn btn-add">Add new frame</button></div>
+        <!-- <div><button id="fullscreen">Fullscreen</button></div> -->
+      </div>
+      <section class="canvas">
+        <canvas id="canvas">Not working</canvas>
+      </section>
+      <section class="preview">
+        <button id="runAnim">Start anim</button>
+        <input type="text" value="" id="frameRate" placeholder="frame per second">
+        <br><br>
+        <canvas id="canvas-area" width="150" height="150"></canvas>
+        <input type="text" value="" id="pixelCount" placeholder="Canvas size">
+        <br><br>
+        <button id="setPixelCount">Set pixel count</button>
+        <div class="canvSize" id='coords'>[ 0 x 0 ]</div>
+      </section>
+  </main>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
